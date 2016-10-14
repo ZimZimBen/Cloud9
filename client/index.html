@@ -34,7 +34,7 @@
         });
 
         $scope.send = function send() {
-          console.log('Sending message:', $scope.text);
+          console.log('Sending message:', $scope.text + "te");
           socket.emit('message', $scope.text);
           $scope.text = '';
         };
